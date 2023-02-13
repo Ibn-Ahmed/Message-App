@@ -8,9 +8,13 @@
   <%# *************Feed************** %>
   <div class="card" style="width: 80%;">
     <div class="card-body">
-      <h5 class="card-title"><i class="bi bi-person-circle"></i></h5>
-      <h6 class="card-subtitle mb-2 text-muted">Mario</h6>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque ad at? Harum, at fugit!</p>
+      <%= render @messages%>
+    </div>
+    <div style="width:100%" class="input-group mb-3 align-items-center p-3">
+      <textarea type="text" class="form-control" placeholder="Message" aria-label="Message" aria-describedby="basic-addon2"></textarea>
+      <div class="input-group-append">
+        <button class="btn btn-lg mx-3 btn-outline-secondary" type="button">Send</button>
+      </div>
     </div>
   </div>
   <%# **********Feed*************** %>
